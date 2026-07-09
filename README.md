@@ -10,12 +10,6 @@ js/main.js           → theme toggle, mobile nav, scroll reveal, typed hero eff
 assets/               → put resume.pdf and any images here
 ```
 
-## Before you publish — replace these placeholders
-Search the files for these and swap in your own info:
-- **index.html**: name, tagline, bio, "looking for" line, timeline entries, skills, all 3 project cards (titles, descriptions, tags, links), email/GitHub/LinkedIn URLs, page `<title>`/meta description
-- **assets/resume.pdf**: add your actual résumé PDF at this path (the "Download résumé" button links here)
-- Optional: swap the 🧑‍💻 emoji avatar for a real photo or illustration in `.avatar-blob`
-
 ## Running locally
 No build tools needed — just open `index.html` in a browser, or serve it locally:
 ```bash
@@ -38,6 +32,5 @@ Then visit `http://localhost:8000`.
 4. Your site will be live at `https://yourusername.github.io/your-repo/` (or `https://yourusername.github.io/` if you used the special repo name) within a minute or two.
 
 ## Notes on the build
-- **Dark mode** toggle is saved via `localStorage` — this works fine on the deployed site (it only fails to persist in some sandboxed previews).
 - **Reduced motion**: if a visitor's OS has "reduce motion" turned on, the typing animation and scroll-reveal are skipped automatically in favor of static content — no extra work needed if you keep editing within the existing markup.
 - **Fonts** are loaded from Google Fonts (Space Grotesk, IBM Plex Sans, IBM Plex Mono). Swap the `<link>` tags in `index.html` if you'd rather self-host them.
