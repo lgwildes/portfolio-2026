@@ -498,7 +498,7 @@ button:focus-visible {
   transition: transform var(--transition), box-shadow var(--transition);
 }
 .project-card:hover {
-  transform: translateY(-6px) rotate(-0.4deg);
+  /* transform: translateY(-6px) rotate(-0.4deg); */
   box-shadow: var(--shadow-hover);
 }
 
@@ -573,7 +573,7 @@ button:focus-visible {
   transition: transform var(--transition), background var(--transition);
 }
 .contact-pill:hover {
-  transform: translateY(-3px) rotate(-1deg);
+  /* transform: translateY(-3px) rotate(-1deg); */
   background: var(--accent-coral-bg);
 }
 

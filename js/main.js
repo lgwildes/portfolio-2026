@@ -76,9 +76,9 @@
   var typedEl = document.getElementById("typed-output");
   var codeLines = [
     'const developer = {',
-    '  name: "Your Name",',
-    '  role: "Full-Stack Developer",',
-    '  focus: ["React", "Node", "Accessibility"],',
+    '  name: "Lydia",',
+    '  role: "Front-End Developer",',
+    '  focus: ["Drupal", "Documentation", "Accessibility"],',
     '  status: "open to work"',
     '};'
   ];
