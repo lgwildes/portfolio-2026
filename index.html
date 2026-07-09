@@ -1,268 +1,295 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Lydia Wildes Schnurpel — Software Developer</title>
-<meta name="description" content="Portfolio of Lydia Wildes Schnurpel, a software developer building things with code.">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lydia Wildes Schnurpel — Software Developer</title>
+  <meta name="description"
+    content="Portfolio of Lydia Wildes Schnurpel, a software developer.">
+  <link rel="icon"
+    href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>👩‍💻</text></svg>">
 
-<!-- PLACEHOLDER: swap in your own favicon -->
-<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>👩‍💻</text></svg>">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500;600&display=swap"
+    rel="stylesheet">
 
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
-
-<link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
 
-<a class="skip-link" href="#main">Skip to content</a>
+  <a class="skip-link" href="#main">Skip to content</a>
 
-<!-- ============ EDITOR-TAB NAV ============ -->
-<header class="editor-chrome">
-  <div class="chrome-top">
-    <div class="chrome-dots" aria-hidden="true">
-      <span class="dot dot-red"></span>
-      <span class="dot dot-yellow"></span>
-      <span class="dot dot-green"></span>
-    </div>
-    <p class="chrome-path">~/lydia-wildes-schnurpel/portfolio</p>
-    <button id="nav-toggle" class="nav-toggle" aria-label="Toggle navigation menu" aria-expanded="false">
-      <span></span><span></span><span></span>
-    </button>
-  </div>
-  <nav class="tab-bar" id="tab-bar" aria-label="Primary">
-    <a class="tab is-active" href="#home"><span class="tab-icon">●</span>Hi!</a>
-    <a class="tab" href="#about"><span class="tab-icon">●</span>About Me</a>
-    <a class="tab" href="#skills"><span class="tab-icon">●</span>Skills</a>
-    <a class="tab" href="#projects"><span class="tab-icon">●</span>Projects</a>
-    <a class="tab" href="#contact"><span class="tab-icon">●</span>Contact</a>
-  </nav>
-</header>
-
-<main id="main">
-
-  <!-- ============ HERO ============ -->
-  <section id="home" class="hero">
-    <div class="terminal" role="img" aria-label="Terminal window displaying an introduction as code">
-      <div class="terminal-bar">
+  <!-- ============ EDITOR-TAB NAV ============ -->
+  <header class="editor-chrome">
+    <div class="chrome-top">
+      <div class="chrome-dots" aria-hidden="true">
         <span class="dot dot-red"></span>
         <span class="dot dot-yellow"></span>
         <span class="dot dot-green"></span>
-        <span class="terminal-title">whoami.sh</span>
       </div>
-      <div class="terminal-body">
-        <p class="line"><span class="prompt">$</span> whoami</p>
-        <pre class="typed-output" id="typed-output" aria-hidden="true"></pre>
-        <p class="line static-fallback">
-          <span class="tok-kw">const</span> <span class="tok-var">developer</span> = {<br>
-          &nbsp;&nbsp;name: <span class="tok-str">"Lydia"</span>,<br>
-          &nbsp;&nbsp;role: <span class="tok-str">"Front End Developer"</span>,<br>
-          &nbsp;&nbsp;focus: [<span class="tok-str">"Drupal"</span>, <span class="tok-str">"Documentation"</span>, <span class="tok-str">"Accessibility"</span>],<br>
-          &nbsp;&nbsp;status: <span class="tok-str">"open to work"</span><br>
-          };
-        </p>
-        <p class="line"><span class="prompt">$</span> <span class="cursor-blink" aria-hidden="true">▍</span></p>
-      </div>
+      <p class="chrome-path">~/lydia-wildes-schnurpel/portfolio</p>
+      <button id="nav-toggle" class="nav-toggle" aria-label="Toggle navigation menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
     </div>
+    <nav class="tab-bar" id="tab-bar" aria-label="Primary">
+      <a class="tab is-active" href="#home"><span class="tab-icon">●</span>Hi!</a>
+      <a class="tab" href="#about"><span class="tab-icon">●</span>About Me</a>
+      <!-- <a class="tab" href="#skills"><span class="tab-icon">●</span>Skills</a> -->
+      <a class="tab" href="#projects"><span class="tab-icon">●</span>Projects</a>
+      <a class="tab" href="#contact"><span class="tab-icon">●</span>Contact</a>
+    </nav>
+  </header>
 
-    <div class="hero-copy">
-      <p class="eyebrow">// hi, I'm</p>
-      <h1>Lydia</h1>
-      <p class="hero-tagline">If you're reading this, that means you're from TAG, hi! I asked Claude to help me plan and build the scaffolding for this portfolio, but then it went ahead and basically created the whole site. So here we are! I'm a Front End Developer who loves to code, and is trying to fiure out where AI fits in. I'm not worried AI will take my job, but I am concerned it will take out the challenge and fun. I'm working to utilize AI to speed up tedious tasks and find solutions to bugs I'd normally spend hours investigating. I've found when it comes to implementing a design, a human led approach works for me.</p>
-      <div class="hero-actions">
-        <a class="btn btn-primary" href="#projects">View my work</a>
-        <a class="btn btn-ghost" href="assets/resume.pdf" download>Download résumé ↓</a>
-      </div>
-    </div>
-  </section>
+  <main id="main">
 
-  <!-- ============ ABOUT ============ -->
-  <section id="about" class="section about">
-    <p class="section-eyebrow">about.js</p>
-    <h2 class="section-title">A little about me</h2>
-
-    <div class="about-grid">
-      <div class="avatar-block" aria-hidden="true">
-        <div class="avatar-blob"></div>
-      </div>
-      <div class="about-copy">
-        <p><!-- PLACEHOLDER: 2-3 sentence bio --> I'm a developer who likes turning messy problems into clean, usable interfaces. Outside of code, I'm probably [hobby], tinkering with [side project], or arguing about tabs vs. spaces (tabs, obviously).</p>
-        <p><!-- PLACEHOLDER: what you're looking for --> I'm currently looking for a <strong>[role type, e.g. front-end / full-stack]</strong> role where I can work on <strong>[what you care about]</strong>.</p>
-
-        <ul class="fact-row">
-          <li><span class="fact-num">3+</span><span class="fact-label">years coding</span></li>
-          <li><span class="fact-num">12</span><span class="fact-label">projects shipped</span></li>
-          <li><span class="fact-num">∞</span><span class="fact-label">cups of coffee</span></li>
-        </ul>
-      </div>
-    </div>
-
-    <div class="timeline">
-      <h3 class="timeline-title">Where I've been</h3>
-      <ol class="timeline-list">
-        <li class="timeline-item">
-          <span class="timeline-dot" style="--dot-color: var(--accent-coral);"></span>
-          <div>
-            <p class="timeline-role">Job Title — Company Name</p>
-            <p class="timeline-when">2024 – Present</p>
-            <p class="timeline-desc">One line on what you did and its impact.</p>
-          </div>
-        </li>
-        <li class="timeline-item">
-          <span class="timeline-dot" style="--dot-color: var(--accent-teal);"></span>
-          <div>
-            <p class="timeline-role">Job Title — Company Name</p>
-            <p class="timeline-when">2022 – 2024</p>
-            <p class="timeline-desc">One line on what you did and its impact.</p>
-          </div>
-        </li>
-        <li class="timeline-item">
-          <span class="timeline-dot" style="--dot-color: var(--accent-purple);"></span>
-          <div>
-            <p class="timeline-role">Degree / Bootcamp — School Name</p>
-            <p class="timeline-when">2018 – 2022</p>
-            <p class="timeline-desc">One line on what you focused on.</p>
-          </div>
-        </li>
-      </ol>
-    </div>
-  </section>
-
-  <!-- ============ SKILLS ============ -->
-  <section id="skills" class="section skills">
-    <p class="section-eyebrow">skills.json</p>
-    <h2 class="section-title">Tools I reach for</h2>
-
-    <div class="skills-grid">
-      <div class="skill-group">
-        <h3 class="skill-group-title"><span class="tok-kw">"languages"</span>:</h3>
-        <ul class="chip-list">
-          <li class="chip chip-coral">JavaScript</li>
-          <li class="chip chip-coral">TypeScript</li>
-          <li class="chip chip-coral">Python</li>
-          <li class="chip chip-coral">HTML &amp; CSS</li>
-        </ul>
-      </div>
-      <div class="skill-group">
-        <h3 class="skill-group-title"><span class="tok-kw">"frameworks"</span>:</h3>
-        <ul class="chip-list">
-          <li class="chip chip-teal">React</li>
-          <li class="chip chip-teal">Node.js</li>
-          <li class="chip chip-teal">Express</li>
-          <li class="chip chip-teal">Next.js</li>
-        </ul>
-      </div>
-      <div class="skill-group">
-        <h3 class="skill-group-title"><span class="tok-kw">"tools"</span>:</h3>
-        <ul class="chip-list">
-          <li class="chip chip-yellow">Git</li>
-          <li class="chip chip-yellow">Docker</li>
-          <li class="chip chip-yellow">Figma</li>
-          <li class="chip chip-yellow">Postman</li>
-        </ul>
-      </div>
-      <div class="skill-group">
-        <h3 class="skill-group-title"><span class="tok-kw">"currently learning"</span>:</h3>
-        <ul class="chip-list">
-          <li class="chip chip-purple">Rust</li>
-          <li class="chip chip-purple">WebGL</li>
-        </ul>
-      </div>
-    </div>
-  </section>
-
-  <!-- ============ PROJECTS ============ -->
-  <section id="projects" class="section projects">
-    <p class="section-eyebrow">projects/</p>
-    <h2 class="section-title">Things I've built</h2>
-
-    <div class="project-grid">
-
-      <article class="project-card">
-        <div class="project-window-bar">
-          <span class="dot dot-red"></span><span class="dot dot-yellow"></span><span class="dot dot-green"></span>
-          <span class="project-window-title">project-one</span>
+    <!-- ============ HERO ============ -->
+    <section id="home" class="hero">
+      <div class="terminal" role="img" aria-label="Terminal window displaying an introduction as code">
+        <div class="terminal-bar">
+          <span class="dot dot-red"></span>
+          <span class="dot dot-yellow"></span>
+          <span class="dot dot-green"></span>
+          <span class="terminal-title">whoami.sh</span>
         </div>
-        <div class="project-body">
-          <h3>Project Name One</h3>
-          <p>One or two sentences on the problem this solved and your role in building it.</p>
-          <ul class="tag-list">
-            <li class="tag">React</li>
-            <li class="tag">Node</li>
-            <li class="tag">PostgreSQL</li>
+        <div class="terminal-body">
+          <p class="line"><span class="prompt">$</span> whoami</p>
+          <pre class="typed-output" id="typed-output" aria-hidden="true"></pre>
+          <p class="line static-fallback">
+            <span class="tok-kw">const</span> <span class="tok-var">developer</span> = {<br>
+            &nbsp;&nbsp;name: <span class="tok-str">"Lydia"</span>,<br>
+            &nbsp;&nbsp;role: <span class="tok-str">"Front End Developer"</span>,<br>
+            &nbsp;&nbsp;focus: [<span class="tok-str">"Drupal"</span>, <span class="tok-str">"Documentation"</span>,
+            <span class="tok-str">"Accessibility"</span>],<br>
+            &nbsp;&nbsp;status: <span class="tok-str">"open to work"</span><br>
+            };
+          </p>
+          <p class="line"><span class="prompt">$</span> <span class="cursor-blink" aria-hidden="true">▍</span></p>
+        </div>
+      </div>
+
+      <div class="hero-copy">
+        <p class="eyebrow">// hi, I'm</p>
+        <h1>Lydia</h1>
+        <p class="hero-tagline">specializing in Drupal and dabbling in Wordpress</p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="#projects">View my work</a>
+          <a class="btn btn-ghost" href="assets/resume.pdf" download>Download résumé ↓</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ ABOUT ============ -->
+    <section id="about" class="section about">
+      <p class="section-eyebrow">About Me</p>
+      <h2 class="section-title">A little about me</h2>
+
+      <div class="about-grid">
+        <div class="avatar-block">
+          <div class="avatar-blob">
+            <img src="lydia-headshot.png" alt="Headshot of Lydia">
+          </div>
+        </div>
+        <div class="about-copy">
+          <p> I'm a Front End Developer who loves to code, and am trying to fiure out how AI fits into that. I'm not worried
+            AI will take my job, but I am concerned it will diminish the challenge and fun of coding. I utilize AI to
+            speed up tedious tasks and find solutions to bugs I'd previously spend hours investigating. I've found when it
+            comes to implementing a beautiful design, a <span class="purple bold">human led approach</span> works for me.</p>
+        </div>
+      </div>
+      <div class="about-facts">
+        <div class="fact-col">
+          <h3 class="fact-heading teal">I like</h3>
+          <ul class="fact-row">
+            <li>CSS & SCSS</li>
+            <li>clear documentation</li>
+            <li>teaching and mentoring</li>
+            <li>working remote</li>
+            <li>being on time</li>
+            <li>owning my sh*t</li>
+            <li>winning trivia</li>
           </ul>
-          <div class="project-links">
-            <a href="#" class="link-arrow">Website →</a>
-          </div>
         </div>
-      </article>
-
-      <article class="project-card">
-        <div class="project-window-bar">
-          <span class="dot dot-red"></span><span class="dot dot-yellow"></span><span class="dot dot-green"></span>
-          <span class="project-window-title">project-two</span>
-        </div>
-        <div class="project-body">
-          <h3>Project Name Two</h3>
-          <p>One or two sentences on the problem this solved and your role in building it.</p>
-          <ul class="tag-list">
-            <li class="tag">TypeScript</li>
-            <li class="tag">Next.js</li>
+        <div class="fact-col">
+          <h3 class="fact-heading coral">I don't like</h3>
+          <ul class="fact-row">
+            <li>messy code</li>
+            <li>meetings that could be emails</li>
+            <li>making the same mistake twice</li>
+            <li>LinkedIn</li>
+            <li>egg salad</li>
           </ul>
-          <div class="project-links">
-            <a href="#" class="link-arrow">Website →</a>
-          </div>
         </div>
-      </article>
+        <div class="fact-col">
+          <h3 class="fact-heading purple">Ask me about</h3>
+          <ul class="fact-row">
+            <li>teaching middle school theatre for 5 years</li>
+            <li>producing the play Puffs and founding a theatre company</li>
+            <li>what I’m reading</li>
+        </div>
+      </div>
 
-      <article class="project-card">
-        <div class="project-window-bar">
-          <span class="dot dot-red"></span><span class="dot dot-yellow"></span><span class="dot dot-green"></span>
-          <span class="project-window-title">project-three</span>
-        </div>
-        <div class="project-body">
-          <h3>Project Name Three</h3>
-          <p>One or two sentences on the problem this solved and your role in building it.</p>
-          <ul class="tag-list">
-            <li class="tag">Python</li>
-            <li class="tag">Flask</li>
+      <div class="timeline">
+        <h3 class="timeline-title">Where I've been</h3>
+        <ol class="timeline-list">
+          <li class="timeline-item">
+            <span class="timeline-dot" style="--dot-color: var(--accent-coral);"></span>
+            <div>
+              <p class="timeline-role">Front End Developer — Gravity Works Design and Development</p>
+              <p class="timeline-when">2023 – Present</p>
+              <p class="timeline-desc">I plan and develop new sites, maintain exiting ones, and stay on top of security updates and accessibility improvements.</p>
+            </div>
+          </li>
+          <li class="timeline-item">
+            <span class="timeline-dot" style="--dot-color: var(--accent-purple);"></span>
+            <div>
+              <p class="timeline-role">Fullstack Developer Certificate / Prime Digital Academy — Minneapolis MN</p>
+              <p class="timeline-when">2021 – 2022</p>
+              <p class="timeline-desc">I started learning the basics of HTML and CSS and finished by building several fullstack React apps.</p>
+            </div>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- ============ SKILLS ============ -->
+    <!-- <section id="skills" class="section skills">
+      <p class="section-eyebrow">Skills</p>
+      <h2 class="section-title">Tools I reach for</h2>
+
+      <div class="skills-grid">
+        <div class="skill-group">
+          <h3 class="skill-group-title"><span class="tok-kw">"languages"</span>:</h3>
+          <ul class="chip-list">
+            <li class="chip chip-coral">JavaScript</li>
+            <li class="chip chip-coral">TypeScript</li>
+            <li class="chip chip-coral">Python</li>
+            <li class="chip chip-coral">HTML &amp; CSS</li>
           </ul>
-          <div class="project-links">
-            <a href="#" class="link-arrow">Website →</a>
-          </div>
         </div>
-      </article>
+        <div class="skill-group">
+          <h3 class="skill-group-title"><span class="tok-kw">"frameworks"</span>:</h3>
+          <ul class="chip-list">
+            <li class="chip chip-teal">React</li>
+            <li class="chip chip-teal">Node.js</li>
+            <li class="chip chip-teal">Express</li>
+            <li class="chip chip-teal">Next.js</li>
+          </ul>
+        </div>
+        <div class="skill-group">
+          <h3 class="skill-group-title"><span class="tok-kw">"tools"</span>:</h3>
+          <ul class="chip-list">
+            <li class="chip chip-yellow">Git</li>
+            <li class="chip chip-yellow">Docker</li>
+            <li class="chip chip-yellow">Figma</li>
+            <li class="chip chip-yellow">Postman</li>
+          </ul>
+        </div>
+        <div class="skill-group">
+          <h3 class="skill-group-title"><span class="tok-kw">"currently learning"</span>:</h3>
+          <ul class="chip-list">
+            <li class="chip chip-purple">Rust</li>
+            <li class="chip chip-purple">WebGL</li>
+          </ul>
+        </div>
+      </div>
+    </section> -->
 
-    </div>
-  </section>
+    <!-- ============ PROJECTS ============ -->
+    <section id="projects" class="section projects">
+      <p class="section-eyebrow">Projects</p>
+      <h2 class="section-title">Things I've built</h2>
 
-  <!-- ============ CONTACT ============ -->
-  <section id="contact" class="section contact">
-    <p class="section-eyebrow">contact.md</p>
-    <h2 class="section-title">Let's talk</h2>
-    <p class="contact-lede">Have a role in mind, or just want to say hi? My inbox is always open.</p>
+      <div class="project-grid">
 
-    <div class="contact-links">
-      <a class="contact-pill" href="mailto:you@example.com">
-        <span class="contact-icon" aria-hidden="true">✉️</span> you@example.com
-      </a>
-      <a class="contact-pill" href="https://github.com/yourhandle" target="_blank" rel="noopener">
-        <span class="contact-icon" aria-hidden="true">🐙</span> GitHub
-      </a>
-      <a class="contact-pill" href="https://linkedin.com/in/yourhandle" target="_blank" rel="noopener">
-        <span class="contact-icon" aria-hidden="true">💼</span> LinkedIn
-      </a>
-    </div>
-  </section>
+        <article class="project-card">
+          <div class="project-window-bar">
+            <span class="dot dot-red"></span><span class="dot dot-yellow"></span><span class="dot dot-green"></span>
+            <span class="project-window-title">project-one</span>
+          </div>
+          <div class="project-body">
+            <h3>Project Name One</h3>
+            <p>One or two sentences on the problem this solved and your role in building it.</p>
+            <ul class="tag-list">
+              <li class="tag">React</li>
+              <li class="tag">Node</li>
+              <li class="tag">PostgreSQL</li>
+            </ul>
+            <div class="project-links">
+              <a href="#" class="link-arrow">Website →</a>
+            </div>
+          </div>
+        </article>
 
-</main>
+        <article class="project-card">
+          <div class="project-window-bar">
+            <span class="dot dot-red"></span><span class="dot dot-yellow"></span><span class="dot dot-green"></span>
+            <span class="project-window-title">project-two</span>
+          </div>
+          <div class="project-body">
+            <h3>Project Name Two</h3>
+            <p>One or two sentences on the problem this solved and your role in building it.</p>
+            <ul class="tag-list">
+              <li class="tag">TypeScript</li>
+              <li class="tag">Next.js</li>
+            </ul>
+            <div class="project-links">
+              <a href="#" class="link-arrow">Website →</a>
+            </div>
+          </div>
+        </article>
 
-<footer class="site-footer">
-  <p>Built with plain HTML, CSS &amp; a little JS — no frameworks harmed in the making of this site.</p>
-</footer>
+        <article class="project-card">
+          <div class="project-window-bar">
+            <span class="dot dot-red"></span><span class="dot dot-yellow"></span><span class="dot dot-green"></span>
+            <span class="project-window-title">project-three</span>
+          </div>
+          <div class="project-body">
+            <h3>Project Name Three</h3>
+            <p>One or two sentences on the problem this solved and your role in building it.</p>
+            <ul class="tag-list">
+              <li class="tag">Python</li>
+              <li class="tag">Flask</li>
+            </ul>
+            <div class="project-links">
+              <a href="#" class="link-arrow">Website →</a>
+            </div>
+          </div>
+        </article>
 
-<script src="js/main.js"></script>
+      </div>
+    </section>
+
+    <!-- ============ CONTACT ============ -->
+    <section id="contact" class="section contact">
+      <p class="section-eyebrow">contact.md</p>
+      <h2 class="section-title">Let's talk</h2>
+      <p class="contact-lede">Have a role in mind, or just want to say hi? My inbox is always open.</p>
+
+      <div class="contact-links">
+        <a class="contact-pill" href="mailto:you@example.com">
+          <span class="contact-icon" aria-hidden="true">✉️</span> you@example.com
+        </a>
+        <a class="contact-pill" href="https://github.com/yourhandle" target="_blank" rel="noopener">
+          <span class="contact-icon" aria-hidden="true">🐙</span> GitHub
+        </a>
+        <a class="contact-pill" href="https://linkedin.com/in/yourhandle" target="_blank" rel="noopener">
+          <span class="contact-icon" aria-hidden="true">💼</span> LinkedIn
+        </a>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <p>Built with plain HTML, CSS &amp; a little JS — no frameworks harmed in the making of this site.</p>
+  </footer>
+
+  <script src="js/main.js"></script>
 </body>
+
 </html>
