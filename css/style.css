@@ -558,6 +558,22 @@ button:focus-visible {
 .link-arrow:hover::after { transform: scaleX(1); }
 
 /* =========================================================
+   ADVENTURES
+   ========================================================= */
+.adventures { 
+  .card-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: var(--space-2);
+
+    img {
+      aspect-ratio: 3/4;
+      object-fit: cover;
+    }
+  }
+}
+
+/* =========================================================
    CONTACT
    ========================================================= */
 .contact { text-align: center; }
