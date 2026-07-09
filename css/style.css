@@ -496,6 +496,15 @@ button:focus-visible {
   border-radius: var(--radius);
   overflow: hidden;
   transition: transform var(--transition), box-shadow var(--transition);
+
+  img {
+    width: 100%;
+    /* height: auto; */
+    display: block;
+    aspect-ratio: 18/9;
+    margin-bottom: var(--space-1);
+    object-fit: cover;
+  }
 }
 .project-card:hover {
   /* transform: translateY(-6px) rotate(-0.4deg); */
